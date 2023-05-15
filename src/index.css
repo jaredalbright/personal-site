@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Strasua';
+  src: url(./assets/strasua.regular.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +12,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #562f5e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,8 +23,22 @@
   text-align: center;
 }
 
+.dev {
+  background-color: #562f5e;
+  -webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 2s;
+}
+
+.photo {
+  background-color: #6F7FAB;
+  -webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 2s;
+}
+
 h1 {
   font-size: 50px;
+  font-family: Strasua;
+  color: #F5ED93;
 }
 
 #name {
@@ -39,8 +60,12 @@ h1 {
   margin-top: -50px;
 }
 
+.non-selected:hover {
+  color: #ABA567;
+}
+
 .selected {
-  color: white;
+  color: #F5ED93;
 }
 
 .dp-option-group {
@@ -53,6 +78,7 @@ h1 {
 h2 {
   font-size: 25px;
   display: inline-block;
+  font-family: Strasua;
 }
 
 .dp-icon {
@@ -68,9 +94,34 @@ button {
   cursor: pointer;
 }
 
+.horizontal-menu {
+  margin-top: 20px;
+  color: white;
+}
+
+.horizontal-menu:hover {
+  color: #ABA567;
+}
+
 .option-menu {
   display: flex;
   grid-row-start: 1;
   grid-column-start: 2;
   margin-left: 30px;
+}
+
+.card {
+  background-color: grey;
+  opacity: 33%;
+  width: 95%;
+  height: 5400px;
+  margin: auto;
+  border-radius: 30px;
+  -webkit-transition: border-radius 2s; /* For Safari 3.1 to 6.0 */
+  transition: border-radius 2s;  
+}
+
+
+.photography {
+  border-radius: 0px;
 }
