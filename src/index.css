@@ -6,13 +6,20 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Gill Sans, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #562f5e;
+  --curr-bg: #562f5e;
+  background-color: var(--curr-bg);
+  -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 1s;
+
+  --text-color: #F5ED93;
+  color: var(--text-color);
+
+  --style-font: Strasua;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,22 +30,53 @@
   text-align: center;
 }
 
-.dev {
-  background-color: #562f5e;
-  -webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
-  transition: background-color 2s;
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 95%;
+  height: 300px;
+  margin: auto;
+  --card-rad: 30px;
+  border-collapse: separate;
+  border-radius: var(--card-rad);
 }
 
+.menus {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.dev {
+  --curr-bg: #562f5e;
+}
+
+.dev-card {
+  --card-rad: 30px;
+  background-color: rgba(199, 199, 199, 0.281);
+  display: grid;
+  justify-content: left;
+}
+
+.dev-menu {
+  margin-top: 30px;
+  margin-left: 35px;
+  grid-row-start: 1;
+}
+
+
 .photo {
-  background-color: #6F7FAB;
-  -webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
-  transition: background-color 2s;
+  --curr-bg: #6F7FAB;
+}
+
+.photo-card {
+  --card-rad: 0px;
+  background-color: rgb(255, 255, 255, 0.4);
 }
 
 h1 {
   font-size: 50px;
-  font-family: Strasua;
-  color: #F5ED93;
+  font-family: var(--style-font);
+  color: var(--text-color);
 }
 
 #name {
@@ -50,9 +88,6 @@ h1 {
   display: grid;
   justify-content: left;
   margin-left: 70px;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
 }
 
 .dp-option {
@@ -65,7 +100,7 @@ h1 {
 }
 
 .selected {
-  color: #F5ED93;
+  color: var(--text-color);
 }
 
 .dp-option-group {
@@ -78,7 +113,7 @@ h1 {
 h2 {
   font-size: 25px;
   display: inline-block;
-  font-family: Strasua;
+  font-family: var(--style-font);
 }
 
 .dp-icon {
@@ -94,34 +129,4 @@ button {
   cursor: pointer;
 }
 
-.horizontal-menu {
-  margin-top: 20px;
-  color: white;
-}
 
-.horizontal-menu:hover {
-  color: #ABA567;
-}
-
-.option-menu {
-  display: flex;
-  grid-row-start: 1;
-  grid-column-start: 2;
-  margin-left: 30px;
-}
-
-.card {
-  background-color: grey;
-  opacity: 33%;
-  width: 95%;
-  height: 5400px;
-  margin: auto;
-  border-radius: 30px;
-  -webkit-transition: border-radius 2s; /* For Safari 3.1 to 6.0 */
-  transition: border-radius 2s;  
-}
-
-
-.photography {
-  border-radius: 0px;
-}

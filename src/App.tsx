@@ -1,16 +1,37 @@
 import React, { useState } from 'react'
 import './index.css'
-import Header from './components/Header'
-import Development from './components/professional/development';
+import Development from './components/Development/Development';
 import Photography from './components/photography/photography';
+import { AnimatePresence, motion } from "framer-motion";
+import {Route, useRoutes, useLocation } from "react-router-dom";
+import ErrorPage from './components/ErrorPage';
+
 
 function App() {
-  const [showDev, setShowDev] = useState(true); 
+  const element = useRoutes([
+    {
+      path: "/",
+      element: <Development />,
+    }, 
+    {
+      path: "/photo",
+      element: <Photography />
+    },
+    {
+      path: "/*",
+      element: <ErrorPage />
+    }
+  ])
+
+  const location = useLocation();
+
+  if (!element) return null;
 
   return (
     <>
-    <Header showDev={() => setShowDev(true)} showPhoto={() => setShowDev(false)} selected={showDev}/>
-    {showDev ? <Development/> : <Photography/>}
+      <AnimatePresence mode="wait">
+        {React.cloneElement(element, { key: location.pathname })}
+      </AnimatePresence>
     </>
   )
 }
