@@ -5,6 +5,11 @@ import Photography from './components/photography/photography';
 import { AnimatePresence, motion } from "framer-motion";
 import {Route, useRoutes, useLocation } from "react-router-dom";
 import ErrorPage from './components/ErrorPage';
+import About from './components/Development/About';
+import Work from './components/Development/Work';
+import Skills from './components/Development/Skills';
+import Projects from './components/Development/Projects';
+import Contact from './components/Development/Contact';
 
 
 function App() {
@@ -12,6 +17,28 @@ function App() {
     {
       path: "/",
       element: <Development />,
+      children: [
+        {
+          path: "/",
+          element: <About />
+        },
+        {
+          path: "work",
+          element: <Work />
+        },
+        {
+          path: "skills",
+          element: <Skills />
+        },
+        {
+          path: "projects",
+          element: <Projects />
+        },
+        {
+          path: "contact",
+          element: <Contact />
+        },
+      ]
     }, 
     {
       path: "/photo",
