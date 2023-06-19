@@ -30,10 +30,15 @@
   text-align: center;
 }
 
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 .card {
   background-color: rgba(0, 0, 0, 0.5);
   width: 95%;
-  height: 300px;
   margin: auto;
   --card-rad: 30px;
   border-collapse: separate;
@@ -51,7 +56,7 @@
 }
 
 .dev-card {
-  --card-rad: 30px;
+  --card-rad: 10px;
   background-color: rgba(199, 199, 199, 0.281);
   display: grid;
   justify-content: left;
@@ -61,6 +66,89 @@
   margin-top: 30px;
   margin-left: 35px;
   grid-row-start: 1;
+}
+
+.resume-opts {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.about-me-align {
+  display: grid;
+  justify-content: left;
+}
+
+.skills-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+.resume-header{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.resume-subheader{
+  text-align: left;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+img {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#profile {
+  border-radius: 100px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  margin: auto;
+  border: 1px;
+}
+
+#aboutme {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.remove-head-padding {
+  padding-bottom: -50px;
+}
+
+.skillgroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: left;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.skillcard {
+  width: 10rem;
+  height: 10rem;
+  padding: 10px 10px 100px 10px;
+}
+
+.skillcard img {
+  height: 100%;
+  width: 100%;
 }
 
 
