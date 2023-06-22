@@ -1,8 +1,11 @@
 import { motion } from "framer-motion"
 const Work = () => {
     return (
-        <div>
+        <div className="resume-opts skills-align">
             <h1>Work</h1>
+            <div id="timeline">
+                <p>Present</p>
+            </div>
         </div>
     )
 }

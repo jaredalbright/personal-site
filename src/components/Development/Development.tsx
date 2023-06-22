@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { useState } from 'react'
 import About from "./About"
 import Skills from "./Skills";
+import Work from "./Work";
 
 const Development = () => {
     const [triggerAnimation, setTriggerAnimation] = useState(true)
@@ -15,6 +16,7 @@ const Development = () => {
             <div className="card dev-card">
                 <About/>
                 <Skills/>
+                <Work/>
             </div>
         </motion.article>
     )

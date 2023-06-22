@@ -7,13 +7,14 @@ import expresslogo from "../../assets/logos/expresslogo.png"
 import gitlogo from "../../assets/logos/gitlogo.png"
 import htmllogo from "../../assets/logos/htmllogo.png"
 import javalogo from "../../assets/logos/javalogo.png"
-import linuxlogo from "../../assets/logos/linuxlogo.jpg"
+import linuxlogo from "../../assets/logos/linuxlogo.png"
 import mongologo from "../../assets/logos/mongologo.png"
 import pythonlogo from "../../assets/logos/pythonlogo.png"
 import reactlogo from "../../assets/logos/reactlogo.png"
 import sqllogo from "../../assets/logos/sqllogo.png"
 import tslogo from "../../assets/logos/tslogo.png"
 import unitylogo from "../../assets/logos/unitylogo.png"
+import dockerlogo from "../../assets/logos/dockerlogo.png"
 import SkillCard from "./SkillCard"
 
 interface Skill {
@@ -35,11 +36,12 @@ const Skills= () => {
         {"name": "AWS", "logo": awslogo},
         {"name": "React", "logo": reactlogo},
         {"name": "Node/Express", "logo": expresslogo},
-        {"name": "Unix/Linux", "logo": linuxlogo},
+        {"name": "Linux", "logo": linuxlogo},
         {"name": "MongoDB", "logo": mongologo},
         {"name": "SQL", "logo": sqllogo},
         {"name": "Git", "logo": gitlogo},
-        {"name": "Unity", "logo": unitylogo}
+        {"name": "Unity", "logo": unitylogo},
+        {"name": "Docker", "logo": dockerlogo}
     )
 
     return (

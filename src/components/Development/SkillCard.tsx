@@ -7,10 +7,12 @@ interface Props {
 
 const SkillCard= ({name, image}: Props) => {
     return (
+        <motion.div whileHover={{scale: 1.15}}>
         <div className="skillcard">
-            <h2>{name}</h2>
             <img src={image} />
+            <h2 id="skillText">{name}</h2>
         </div>
+        </motion.div>
     )
 }
 
