@@ -19,7 +19,16 @@ const JobCard = () => {
     const open = () => setModalOpen(true);
     return (
         <div>
-            <Trigger/>
+    <div>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="save-button"
+        onClick={() => (modalOpen ? close() : open())}
+      >
+        Launch modal
+      </motion.button>
+    </div>
         <AnimatePresence
             // Disable any initial animations on children that
             // are present when the component is first rendered
