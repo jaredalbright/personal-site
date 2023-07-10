@@ -19,7 +19,7 @@ const JobCard = () => {
     const open = () => setModalOpen(true);
     return (
         <div>
-            <Trigger/>
+            <Trigger handleOpen={open}/>
         <AnimatePresence
             // Disable any initial animations on children that
             // are present when the component is first rendered
@@ -31,7 +31,7 @@ const JobCard = () => {
             // Fires when all exiting nodes have completed animating out
             onExitComplete={() => null}
         >
-            {modalOpen && <Modal handleClose={close} text={"Fuck"} />}
+            {modalOpen && <Modal handleClose={close} text={"Fuck"} header={"fuck"}/>}
         </AnimatePresence>
         </div>
     )

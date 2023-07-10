@@ -25,21 +25,23 @@ const dropIn = {
 
 interface Props {
     handleClose: MouseEventHandler<Element>,
-    text: string
+    text: string,
+    header: string
 }  
 
-const Modal = ({ handleClose, text }: Props) => {
+const Modal = ({ handleClose, text, header }: Props) => {
 
     return (
       <Backdrop onClick={handleClose}>
           <motion.div
             onClick={(e) => e.stopPropagation()}  
-            className="modal orange-gradient"
+            className="modal"
             variants={dropIn}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
+            <h1>{header}</h1>
             <p>{text}</p>
             <button onClick={handleClose}>Close</button>
           </motion.div>
@@ -48,4 +50,4 @@ const Modal = ({ handleClose, text }: Props) => {
   };
 
   
-  export default Modal;
+export default Modal;

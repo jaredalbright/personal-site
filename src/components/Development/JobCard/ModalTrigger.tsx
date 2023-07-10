@@ -1,24 +1,23 @@
-import { useState } from "react";
+import { useState, MouseEventHandler} from "react";
 import { motion } from "framer-motion";
 
-const Trigger = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+interface Props {
+  handleOpen: MouseEventHandler<Element>,
+}  
 
-  const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
-
+const Trigger = ({ handleOpen }: Props) => {
   return (
     <div>
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="save-button"
-        onClick={() => (modalOpen ? close() : open())}
+        className="job-button"
+        onClick={handleOpen}
       >
         Launch modal
       </motion.button>
     </div>
   )
 }
-  
+
 export default Trigger;
