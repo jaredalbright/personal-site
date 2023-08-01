@@ -26,10 +26,11 @@ const dropIn = {
 interface Props {
     handleClose: MouseEventHandler<Element>,
     text: string,
-    header: string
+    header: string,
+    image: string
 }  
 
-const Modal = ({ handleClose, text, header }: Props) => {
+const Modal = ({ handleClose, text, header, image }: Props) => {
 
     return (
       <Backdrop onClick={handleClose}>
@@ -41,7 +42,8 @@ const Modal = ({ handleClose, text, header }: Props) => {
             animate="visible"
             exit="exit"
           >
-            <h1>{header}</h1>
+            <img src={image} className="workImage menus"/>
+            <h1 className="menus">{header}</h1>
             <p>{text}</p>
             <button onClick={handleClose}>Close</button>
           </motion.div>

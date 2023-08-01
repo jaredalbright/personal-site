@@ -1,0 +1,9 @@
+{
+    "Jobs": [
+        {"short": "SWE", "header": "Capital One - Software Engineer", "image":  "/src/assets/logos/Capital_One.png", "description": "This is my job"},
+        {"short": "SWE Intern", "header": "Capital One - Software Engineering Intern", "image":  "/src/assets/logos/Capital_One.png", "description": "This was my job"},
+        {"short": "Data Analyst", "header": "Virginia Tech CEE Department - Data Analyst", "image":  "/src/assets/logos/Virginia_Tech.png", "description": "This was my job"},
+        {"short": "Construction Engineer Intern", "header": "Samet Corporation - Construction Engineering Intern", "image":  "/src/assets/logos/Samet.png", "description": "This was my job"},
+        {"short": "Other Jobs", "header": "All of my Other Jobs", "image":  "/src/assets/logos/work.png", "description": "This was my job"}
+    ]
+}

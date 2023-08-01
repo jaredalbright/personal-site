@@ -1,13 +1,19 @@
 import { motion } from "framer-motion"
 import JobCard from "./JobCard/JobCard"
+import WorkInfo from "./WorkInfo.json"
+import Capital_One from "../../assets/logos/Capital_One.png"
+
+interface Job {
+    header: string,
+    image: string,
+    description: string
+}
 
 const Work = () => {
     return (
         <div className="resume-opts skills-align">
-            <h1>Work</h1>
-            <div id="timeline">
-                <JobCard />
-            </div>
+            <h1 className="resume-header">Work</h1>
+                <div className="jobgroup">{WorkInfo.Jobs.map((job:Job) => (<JobCard short={job.short} header={job.header} image={job.image} description={job.description} />))}</div>
         </div>
     )
 }

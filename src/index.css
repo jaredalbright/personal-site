@@ -252,9 +252,37 @@ button {
 }
 
 .job-button {
-  color: black;
-  background-color: aqua;
   border-radius: 10px;
   padding: 0.5rem;
   margin-top: 10px;
+  color: var(--text-color);
+}
+
+.workImage {
+  height: 8rem;
+  width: auto;
+}
+
+.workButtonImage{
+  height: 7rem;
+  width: auto;
+  align-self: center;
+}
+
+.jobgroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.job {
+  padding: 0px 2rem 0px 2rem;
+}
+
+.job-button-align {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
