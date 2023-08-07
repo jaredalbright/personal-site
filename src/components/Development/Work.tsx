@@ -4,6 +4,7 @@ import WorkInfo from "./WorkInfo.json"
 import Capital_One from "../../assets/logos/Capital_One.png"
 
 interface Job {
+    short: string,
     header: string,
     image: string,
     description: string

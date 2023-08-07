@@ -1,8 +1,15 @@
 import { motion } from "framer-motion"
-const Projects= () => {
+
+interface Project {
+    header: string,
+    image: string,
+    description: string
+}
+
+const Projects = () => {
     return (
-        <div>
-            <h1>Projects</h1>
+        <div className="resume-opts skills-align">
+            <h1 className="resume-header">Projects</h1>
         </div>
     )
 }

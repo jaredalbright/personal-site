@@ -35,13 +35,13 @@ const Skills= () => {
     let skills : Array<Skill> = Array(
         {"name": "AWS", "logo": awslogo},
         {"name": "React", "logo": reactlogo},
-        {"name": "Node/Express", "logo": expresslogo},
         {"name": "Linux", "logo": linuxlogo},
         {"name": "MongoDB", "logo": mongologo},
         {"name": "SQL", "logo": sqllogo},
         {"name": "Git", "logo": gitlogo},
         {"name": "Unity", "logo": unitylogo},
-        {"name": "Docker", "logo": dockerlogo}
+        {"name": "Docker", "logo": dockerlogo},
+        {"name": "Node/Express", "logo": expresslogo}
     )
 
     return (

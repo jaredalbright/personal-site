@@ -141,8 +141,8 @@ img {
 }
 
 .skillcard {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   padding: 20px 20px 20px 20px;
   margin-bottom: 3rem;
 }
@@ -286,3 +286,9 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.workText {
+  white-space: pre-wrap;
+  text-align: left;
+}
+

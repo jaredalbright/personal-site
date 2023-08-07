@@ -5,6 +5,7 @@ import { useState } from 'react'
 import About from "./About"
 import Skills from "./Skills";
 import Work from "./Work";
+import Projects from "./Projects";
 
 const Development = () => {
     const [triggerAnimation, setTriggerAnimation] = useState(true)
@@ -17,6 +18,7 @@ const Development = () => {
                 <About/>
                 <Skills/>
                 <Work/>
+                <Projects/>
             </div>
         </motion.article>
     )

@@ -31,7 +31,6 @@ interface Props {
 }  
 
 const Modal = ({ handleClose, text, header, image }: Props) => {
-
     return (
       <Backdrop onClick={handleClose}>
           <motion.div
@@ -44,7 +43,7 @@ const Modal = ({ handleClose, text, header, image }: Props) => {
           >
             <img src={image} className="workImage menus"/>
             <h1 className="menus">{header}</h1>
-            <p>{text}</p>
+            <p className="workText">{text}</p>
             <button onClick={handleClose}>Close</button>
           </motion.div>
       </Backdrop>
