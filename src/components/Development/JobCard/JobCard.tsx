@@ -6,6 +6,7 @@ import Trigger from "./ModalTrigger";
 
 interface Props {
     short: string,
+    year: string,
     header: string,
     image: string,
     description: string
@@ -13,7 +14,7 @@ interface Props {
 
 //{name, image, description}: Props
 
-const JobCard = ({short, header, image, description}: Props) => {
+const JobCard = ({short, year, header, image, description}: Props) => {
     const [modalOpen, setModalOpen] = useState(false);
 
     const close = () => setModalOpen(false);
@@ -32,7 +33,7 @@ const JobCard = ({short, header, image, description}: Props) => {
             // Fires when all exiting nodes have completed animating out
             onExitComplete={() => null}
         >
-            {modalOpen && <Modal handleClose={close} text={description} header={header} image={image}/>}
+            {modalOpen && <Modal handleClose={close} text={description} year={year} header={header} image={image}/>}
         </AnimatePresence>
         </div>
     )

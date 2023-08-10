@@ -16,7 +16,7 @@
   -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
   transition: background-color 1s;
 
-  --text-color: #F5ED93;
+  --text-color: white;
   color: var(--text-color);
 
   --style-font: Strasua;
@@ -161,7 +161,7 @@ img {
 }
 
 .photo-card {
-  --card-rad: 0px;
+  --card-rad: 10px;
   background-color: rgb(255, 255, 255, 0.4);
   padding: 20rem 0px 20rem 0px;
 }
@@ -242,7 +242,7 @@ button {
 
 .modal {
   width: clamp(50%, 700px, 90%);
-  height: min(50%, 300px);
+  height: min(50%, 700px);
   margin: auto;
   padding: 0 2rem;
   border-radius: 12px;
@@ -285,6 +285,10 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.workHeader {
+  margin-bottom: -1rem;
 }
 
 .workText {
