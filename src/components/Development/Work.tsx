@@ -15,7 +15,7 @@ const Work = () => {
     return (
         <div className="resume-opts skills-align">
             <h1 className="resume-header">Work</h1>
-                <div className="jobgroup">{WorkInfo.Jobs.map((job:Job) => (<JobCard short={job.short} year={job.years} header={job.header} image={job.image} description={job.description} />))}</div>
+                <div className="jobgroup">{WorkInfo.Jobs.map((job:Job, index) => (<JobCard key={index} short={job.short} year={job.years} header={job.header} image={job.image} description={job.description} />))}</div>
         </div>
     )
 }

@@ -48,9 +48,9 @@ const Skills= () => {
         <div className="resume-opts skills-align">
             <h1 className="no-select remove-head-padding">Skills</h1>
             <h2 className="no-select">Languages</h2>
-            <div className="skillgroup">{languages.map((language:Skill) => (<SkillCard name={language.name} image={language.logo}/>))}</div>
+            <div className="skillgroup">{languages.map((language:Skill, index) => (<SkillCard name={language.name} image={language.logo} key={index}/>))}</div>
             <h2 className="no-select">Technologies</h2>
-            <div className="skillgroup">{skills.map((skill:Skill) => (<SkillCard name={skill.name} image={skill.logo}/>))}</div>
+            <div className="skillgroup">{skills.map((skill:Skill, index) => (<SkillCard name={skill.name} image={skill.logo} key={index}/>))}</div>
         </div>
     )
 }
