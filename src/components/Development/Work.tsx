@@ -1,7 +1,9 @@
-import { motion } from "framer-motion"
 import JobCard from "./JobCard/JobCard"
 import WorkInfo from "./WorkInfo.json"
-import Capital_One from "../../assets/logos/Capital_One.png"
+import capitalone from "../../assets/logos/capitalone.png"
+import samet from "../../assets/logos/samet.png"
+import work from "../../assets/logos/work.png"
+import vt from "../../assets/logos/vt.png"
 
 interface Job {
     short: string,

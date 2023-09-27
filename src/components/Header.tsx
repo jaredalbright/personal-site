@@ -1,6 +1,6 @@
 import '../index.css'
 import { useState } from 'react'
-import { TfiCamera, TfiDesktop } from 'react-icons/Tfi';
+import { TfiCamera, TfiDesktop } from 'react-icons/tfi';
 import { useNavigate } from 'react-router-dom';
 const Header = () => {
     const [devClass, setDevClass] = useState("dp-option selected");

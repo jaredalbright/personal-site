@@ -13,7 +13,7 @@ const Trigger = ({ handleOpen, short, stack }: Props) => {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="job-button"
+        className="job-button project"
         onClick={handleOpen}
       >
       <div className="job-button-align">

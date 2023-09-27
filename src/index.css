@@ -162,7 +162,7 @@ img {
 
 .photo-card {
   --card-rad: 10px;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255, 0.3);
   padding: 20rem 0px 20rem 0px;
 }
 
@@ -242,9 +242,8 @@ button {
 
 .modal {
   width: clamp(50%, 700px, 90%);
-  height: min(50%, 700px);
+  height: min(50%, 500px);
   margin: auto;
-  padding: 0 2rem;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -281,6 +280,13 @@ button {
   padding: 0px 2rem 0px 2rem;
 }
 
+.project {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: .6rem -1.3rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
 .job-button-align {
   display: flex;
   flex-direction: column;
@@ -296,3 +302,15 @@ button {
   text-align: left;
 }
 
+a {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.close {
+  font-size: 16px;
+}

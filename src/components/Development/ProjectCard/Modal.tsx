@@ -43,11 +43,11 @@ const Modal = ({ handleClose, text, stack, header, projectLink, projectDesc }: P
             animate="visible"
             exit="exit"
           >
-            <h1 className="menus workHeader">{header}</h1>
-            <h2 className="menus">{stack}</h2>
+            <h1 className="workHeader">{header}</h1>
+            <h2>{stack}</h2>
             <p className="workText">{text}</p>
-            {projectLink ? <a href={projectLink}>Link to Project</a> : <h3>{projectDesc}</h3>}
-            <button onClick={handleClose}>Close</button>
+            {projectLink ? <a href={projectLink} target="_blank" rel="noopener">Link to Project</a> : <h4>{projectDesc}</h4>}
+            <button onClick={handleClose} className="close">Close</button>
           </motion.div>
       </Backdrop>
     );

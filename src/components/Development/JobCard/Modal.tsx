@@ -43,7 +43,7 @@ const Modal = ({ handleClose, text, year, header, image }: Props) => {
             exit="exit"
           >
             <img src={image} className="workImage menus"/>
-            <h1 className="menus workHeader">{header}</h1>
+            <h1 className="workHeader">{header}</h1>
             <h2 className="menus">{year}</h2>
             <p className="workText">{text}</p>
             <button onClick={handleClose}>Close</button>
