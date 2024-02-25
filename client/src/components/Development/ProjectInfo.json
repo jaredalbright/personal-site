@@ -1,11 +1,67 @@
 {
     "Projects": [
-        {"short": "My Resume Website", "stack": "React, Typescript", "description": "This is what you're on right now! It had been sometime since I used my React skills and I thought what better way than making something practical. For this project I really wanted the first half to focus only on frontend. For the second half I will be focusing on my photography which will require a backend to store the photos.\n\t - Sharpened frontend skills with a focus on React and Typescript \n\t - Used Framer Motion to included animations and page transitions \n\t - Created complex CSS layouts", "projectLink": "https://github.com/jaredalbright/personal-site", "projectDesc": null},
-        {"short": "VR Geo Investigation", "stack": "C#, Unity", "description": "This was a final project for my HCI Capstone. I designed a VR proof of concept for a grad student's research centered around how VR could assist in geolocation. The idea was to come up with a cross between Google Earth VR and Google Maps street view. \n\t - Created VR experience using HTC Vive and Unity \n\t - Implemented movement systems such as: teleportation, flying and seamless transition between overhead and street view \n\t - Developed VR compatible HUD with menus that pulled information from APIs", "projectLink": null, "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"},
-        {"short": "TrickTracker", "stack": "React, Express, Node, MongoDB, Javascript", "description": "Used the MERN stack to create a web app to track wakeboard tricks. Hosted on AWS using an EC2 instance but taken down because NYC doesn't have anywhere for me to wakeboard. \n\t - Displays user's tricks sorted by different properties and allows the user to edit and delete their tricks. \n\t - Learned about database management using middleware", "projectLink": "https://github.com/jaredalbright/trick-tracker", "projectDesc": null},
-        {"short": "Customizable Shell", "stack": "C, Unix", "description": "As a part of my OS class I created a customizable shell. I went from hating having to use the command line to create a shell from scratch. I also went from hating to C to tolerating it because writing OS level code is pretty neat. \n\t -  Gained experience using many different Linux system calls \n\t - Supports functionality for job control, background & foreground jobs, pipes & I/O redirection and process groups.", "projectLink": null, "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"},
-        {"short": "64-bit Memory Allocator", "stack": "C, Unix", "description": "As much as I hated my OS class there are 3 projects listed on this website from it because in hindsight I learned a lot of good stuff. This project was a memory allocator \n\t - Created a 64-bit Dynamic Storage Allocator that mimics the malloc, free and realloc routines\n\t - Enhanced to handle various edge cases such as multiple threads and heap consistency.\n\t -  Optimized space utilization and throughput by testing various designs.", "projectLink": null, "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"},
-        {"short": "Threadpool Manager", "stack": "C, Unix", "description": "Created a threadpool manager that handled allocating work to workers and would take in a user defined threadfunction. I learned way too much about PThreads from this project and have a deep appreciation for what goes on to make higher level multithreading possible. I include this project only to highlight that I am much much more knowledgeable on multithreading now but this is what started my interest. I ended up taking a graduate level parallel computing class that taught me everything from more on Pthreads to OpenMP and MPI. As a professional I have been able to give a presentation at a company wide tech conference for Capital One on multithreading within python.", "projectLink": null, "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"},
-        {"short": "HokieAPI", "stack": "Python, FastAPI", "description": "Created an API to provide information about Virginia Tech sports and Blacksburg. \n\t - First real dive into desigining an API \n\t - Learned how to use the FastAPI framework", "projectLink": "https://github.com/jaredalbright/hokieAPI", "projectDesc": null}
+        {
+            "short": "Pickleball Scheduler",
+            "stack": "GCP, React, Express, Node, NoSQL, Python, Docker, NGINX",
+            "description": "The gym where I play Pickleball allows members to book sessions 1 week out to the minute. I was constantly forgetting to book the sessions when they got released and as a result would miss out on the opportunity to play. So I figured out the API endpoints that are used to create the reservations and made a cloud function that would run on a schedule to do it for me. To take it one step further I created a fullstack app that automated the creation of the schedules by pulling the next weeks data from the gym's API.  \n\t - Reverse engineered a popular gym's API to automate booking pickleball sessions using a GCP Cloud Function and GCP Cloud Scheduler to run scheduled jobs. \n\t - Designed web app to provide user friendly UI for dynamic creation of scheduled jobs. \n\t - Incorporated GCP SDK, Firebase Database and JWT Authentication into the backend to manage and protect GCP resources and multiple user's data",
+            "projectLink": "https://github.com/jaredalbright/Pickleball_FS",
+            "projectDesc": null
+        },
+        {
+            "short": "BeanList",
+            "stack": "Angular, Spring Boot, PostgreSQL, Java, Typescrip",
+            "description": "Java was the language I learned to code in but as soon as I learned Python I avoided using it outside of class work. Fast forward to working fulltime and I can't seem to escape Java so I wanted to make a web app from scratch to continue to grow my skills.  \n\t - Developed a web app to rank coffee shops in New York. \n\t - Tracks user's favorite coffee sorted by different properties and allows the user to edit an delete their favorite coffee. \n\t - Used MongoDB to manage the database.",
+            "projectLink": "https://github.com/jaredalbright/Angular-Springboot-Demo",
+            "projectDesc": null
+        },
+        {
+            "short": "My Resume Website",
+            "stack": "React, Typescript",
+            "description": "This is what you're on right now! It had been sometime since I used my React skills and I thought what better way than making something practical. For this project I really wanted the first half to focus only on frontend. For the second half I will be focusing on my photography which will require a backend to store the photos.\n\t - Sharpened frontend skills with a focus on React and Typescript \n\t - Used Framer Motion to included animations and page transitions \n\t - Created complex CSS layouts",
+            "projectLink": "https://github.com/jaredalbright/personal-site",
+            "projectDesc": null
+        },
+        {
+            "short": "VR Geo Investigation",
+            "stack": "C#, Unity",
+            "description": "This was a final project for my HCI Capstone. I designed a VR proof of concept for a grad student's research centered around how VR could assist in geolocation. The idea was to come up with a cross between Google Earth VR and Google Maps street view. \n\t - Created VR experience using HTC Vive and Unity \n\t - Implemented movement systems such as: teleportation, flying and seamless transition between overhead and street view \n\t - Developed VR compatible HUD with menus that pulled information from APIs",
+            "projectLink": null,
+            "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"
+        },
+        {
+            "short": "TrickTracker",
+            "stack": "React, Express, Node, MongoDB, Javascript",
+            "description": "Used the MERN stack to create a web app to track wakeboard tricks. Hosted on AWS using an EC2 instance but taken down because NYC doesn't have anywhere for me to wakeboard. \n\t - Displays user's tricks sorted by different properties and allows the user to edit and delete their tricks. \n\t - Learned about database management using middleware",
+            "projectLink": "https://github.com/jaredalbright/trick-tracker",
+            "projectDesc": null
+        },
+        {
+            "short": "Customizable Shell",
+            "stack": "C, Unix",
+            "description": "As a part of my OS class I created a customizable shell. I went from hating having to use the command line to create a shell from scratch. I also went from hating to C to tolerating it because writing OS level code is pretty neat. \n\t -  Gained experience using many different Linux system calls \n\t - Supports functionality for job control, background & foreground jobs, pipes & I/O redirection and process groups.",
+            "projectLink": null,
+            "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"
+        },
+        {
+            "short": "64-bit Memory Allocator",
+            "stack": "C, Unix",
+            "description": "As much as I hated my OS class there are 3 projects listed on this website from it because in hindsight I learned a lot of good stuff. This project was a memory allocator \n\t - Created a 64-bit Dynamic Storage Allocator that mimics the malloc, free and realloc routines\n\t - Enhanced to handle various edge cases such as multiple threads and heap consistency.\n\t -  Optimized space utilization and throughput by testing various designs.",
+            "projectLink": null,
+            "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"
+        },
+        {
+            "short": "Threadpool Manager",
+            "stack": "C, Unix",
+            "description": "Created a threadpool manager that handled allocating work to workers and would take in a user defined threadfunction. I learned way too much about PThreads from this project and have a deep appreciation for what goes on to make higher level multithreading possible. I include this project only to highlight that I am much much more knowledgeable on multithreading now but this is what started my interest. I ended up taking a graduate level parallel computing class that taught me everything from more on Pthreads to OpenMP and MPI. As a professional I have been able to give a presentation at a company wide tech conference for Capital One on multithreading within python.",
+            "projectLink": null,
+            "projectDesc": "Due to Virginia Tech's honor code I cannot provide the repo"
+        },
+        {
+            "short": "HokieAPI",
+            "stack": "Python, FastAPI",
+            "description": "Created an API to provide information about Virginia Tech sports and Blacksburg. \n\t - First real dive into desigining an API \n\t - Learned how to use the FastAPI framework",
+            "projectLink": "https://github.com/jaredalbright/hokieAPI",
+            "projectDesc": null
+        }
     ]
 }

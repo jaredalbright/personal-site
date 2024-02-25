@@ -15,6 +15,7 @@ import sqllogo from "../../assets/logos/sqllogo.png"
 import tslogo from "../../assets/logos/tslogo.png"
 import unitylogo from "../../assets/logos/unitylogo.png"
 import dockerlogo from "../../assets/logos/dockerlogo.png"
+import gcplogo from "../../assets/logos/gcplogo.png"
 import SkillCard from "./SkillCard"
 
 interface Skill {
@@ -34,6 +35,7 @@ const Skills= () => {
     )
     let skills : Array<Skill> = Array(
         {"name": "AWS", "logo": awslogo},
+        {"name": "GCP", "logo": gcplogo},
         {"name": "React", "logo": reactlogo},
         {"name": "Linux", "logo": linuxlogo},
         {"name": "MongoDB", "logo": mongologo},
